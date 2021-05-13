@@ -17,11 +17,12 @@ import ReactPicker from './components/ReactPicker';
 import ReactWeb from './components/ReactWeb'
 import ReducerHooks from './components/ReducerHooks';
 import ReactSync from './components/ReactSync';
+import ReactPager from './components/ReactPager';
 
 export default function App() {
   return (
    
-     <ReactSync />
+     <ReactPager />
     
   );
 }
