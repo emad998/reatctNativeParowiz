@@ -18,11 +18,38 @@ import ReactWeb from './components/ReactWeb'
 import ReducerHooks from './components/ReducerHooks';
 import ReactSync from './components/ReactSync';
 import ReactPager from './components/ReactPager';
+import {NavigationContainer} from '@react-navigation/native'
+import { createStackNavigator } from '@react-navigation/stack';
+import Home from './components/Home'
+import Profile from './components/Profile'
 
-export default function App() {
+const Stack = createStackNavigator();
+
+const myStyles = {
+  title: 'Home',
+  headerStyle: {
+    backgroundColor: 'green'
+  }
+}
+
+function App() {
   return (
-   
-     <ReactPager />
+    <Stack.Navigator>
+      <Stack.Screen name="Home" component={Home}  options={myStyles}/>
+     
+      <Stack.Screen name="Profile" component={Profile} />
+     
+    </Stack.Navigator>
+    
     
   );
+}
+
+
+export default () => {
+  return (
+  <NavigationContainer>
+    <App />
+  </NavigationContainer>
+  )
 }
