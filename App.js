@@ -16,11 +16,12 @@ import ReactInput from './components/ReactInput'
 import ReactPicker from './components/ReactPicker';
 import ReactWeb from './components/ReactWeb'
 import ReducerHooks from './components/ReducerHooks';
+import ReactSync from './components/ReactSync';
 
 export default function App() {
   return (
    
-     <ReducerHooks />
+     <ReactSync />
     
   );
 }
