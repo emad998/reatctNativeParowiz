@@ -11,12 +11,13 @@ import ReactFlat from './components/ReactFlat';
 import StateClass from './components/StateClass'
 import UseStateHooks from './components/UseStateHooks';
 import EffectHooks from './components/EffectHooks'
+import ReactImage from './components/ReactImage';
 
 export default function App() {
   return (
    
       <View>
-        <EffectHooks />
+        <ReactImage />
       </View>
     
   );
