@@ -5,8 +5,7 @@ class HelloClass extends Component {
     render() {
         return (
             <View>
-                <Text style={{fontSize: 30, color: 'yellow', padding: 20}}>Hello from class component</Text>
-                <Text style={styles.textStyle}>this is second text</Text>
+                <Text style={styles.textStyle}>{this.props.website}</Text>
             </View>
         )
     }

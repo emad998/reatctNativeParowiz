@@ -7,9 +7,8 @@ import HelloClass from './components/HelloClass';
 export default function App() {
   return (
     <View>
-      <Hello />
-      <HelloClass />
-      
+      <Hello name='Emad' lastName='Hanna'/>
+      <HelloClass website = "geekcoders.com"/>
     </View>
   );
 }
