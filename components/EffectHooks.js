@@ -5,13 +5,19 @@ import axios from 'axios'
 
 function EffectHooks() {
     const [posts, setPosts] = useState([])
+    const [loading, setLoading] = useState(true)
 
-    useEffect(() => {
+    const renderData2 = () => {
         axios.get('https://jsonplaceholder.typicode.com/posts')
         .then(resp => {
             setPosts(resp.data)
+            setLoading(false)
         })
         .catch(error => console.log(err))
+    }
+
+    useEffect(() => {
+        renderData2()
     }, [])
 
     const renderData = (item) => {
@@ -31,7 +37,8 @@ function EffectHooks() {
             return renderData(item)
         }}
         keyExtractor = {item => `${item.id}`}
-        
+        onRefresh = {() => renderData2()}
+        refreshing = {loading}
         
         />
     )
