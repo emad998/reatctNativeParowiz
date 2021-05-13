@@ -3,6 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import CreateCard from './components/CreateCard';
 import FlexLayout from './components/FlexLayout';
+import FloatingButton from './components/FloatingButton';
 import Hello from './components/Hello';
 import HelloClass from './components/HelloClass';
 import ReactFlat from './components/ReactFlat';
@@ -11,8 +12,8 @@ import UseStateHooks from './components/UseStateHooks';
 
 export default function App() {
   return (
-    <View>
-      <ReactFlat />
-    </View>
+   
+      <FloatingButton />
+    
   );
 }
