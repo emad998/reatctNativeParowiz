@@ -13,12 +13,13 @@ import UseStateHooks from './components/UseStateHooks';
 import EffectHooks from './components/EffectHooks'
 import ReactImage from './components/ReactImage';
 import ReactInput from './components/ReactInput'
+import ReactPicker from './components/ReactPicker';
 
 export default function App() {
   return (
    
       <View>
-        <ReactInput />
+        <ReactPicker />
       </View>
     
   );
