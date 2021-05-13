@@ -1,7 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { FlatList, StyleSheet, Text, View } from 'react-native';
 import CreateCard from './components/CreateCard';
+import FetchData from './components/FetchData';
 import FlexLayout from './components/FlexLayout';
 import FloatingButton from './components/FloatingButton';
 import Hello from './components/Hello';
@@ -9,11 +10,14 @@ import HelloClass from './components/HelloClass';
 import ReactFlat from './components/ReactFlat';
 import StateClass from './components/StateClass'
 import UseStateHooks from './components/UseStateHooks';
+import EffectHooks from './components/EffectHooks'
 
 export default function App() {
   return (
    
-      <FloatingButton />
+      <View>
+        <EffectHooks />
+      </View>
     
   );
 }
