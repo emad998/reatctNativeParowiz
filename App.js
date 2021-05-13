@@ -12,12 +12,13 @@ import StateClass from './components/StateClass'
 import UseStateHooks from './components/UseStateHooks';
 import EffectHooks from './components/EffectHooks'
 import ReactImage from './components/ReactImage';
+import ReactInput from './components/ReactInput'
 
 export default function App() {
   return (
    
       <View>
-        <ReactImage />
+        <ReactInput />
       </View>
     
   );
