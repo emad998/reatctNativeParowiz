@@ -4,13 +4,12 @@ import { StyleSheet, Text, View } from 'react-native';
 import Hello from './components/Hello';
 import HelloClass from './components/HelloClass';
 import StateClass from './components/StateClass'
+import UseStateHooks from './components/UseStateHooks';
 
 export default function App() {
   return (
     <View>
-      <Hello name='Emad' lastName='Hanna'/>
-      <HelloClass website = "geekcoders.com"/>
-      <StateClass />
+      <UseStateHooks />
     </View>
   );
 }
