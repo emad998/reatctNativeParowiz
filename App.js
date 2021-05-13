@@ -14,13 +14,12 @@ import EffectHooks from './components/EffectHooks'
 import ReactImage from './components/ReactImage';
 import ReactInput from './components/ReactInput'
 import ReactPicker from './components/ReactPicker';
+import ReactWeb from './components/ReactWeb'
 
 export default function App() {
   return (
    
-      <View>
-        <ReactPicker />
-      </View>
+      <ReactWeb />
     
   );
 }
